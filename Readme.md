@@ -8,13 +8,13 @@
 ## What is redux?
 
 A library and the 'pattern' which helps us to update and manage the state easyly.
-It will act as the centralized store, so the app can retrive and update the state (perdictable fashion)
+It will act as the centralized store, so the app can retrive and update the state (`perdictable fashion`).
 https://redux.js.org/introduction/getting-started
 
 ## Why and When we should use Redux
 
-Why? - Redux maintain the state globally, prop hell
-When? - App uses the complex logic to update the state and app updates the state very realtime and frequently
+Why? - Redux maintain the state globally and fixes the Prop hell.
+When? - App uses the complex logic to update the state and app updates the state very realtime and frequently.
 
 ## Support libraries for Redux
 
