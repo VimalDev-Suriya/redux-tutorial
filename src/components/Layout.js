@@ -7,21 +7,15 @@ import Loading from './Loading';
 import FullScreenError from './FullScreenError';
 
 const Layout = () => {
-  const { error, loading, posts, fetchPost } = usePost();
+  const { error, loading, posts, fetchpostStore } = usePost();
   const {
     error: errorAuthors,
     loading: loadingAuthor,
-    authors,
-    fetchAuthours,
   } = useAuthors();
 
   useEffect(() => {
     if (!loading && !posts) {
-      fetchPost();
-    }
-
-    if (!loadingAuthor && !authors) {
-      fetchAuthours();
+      fetchpostStore();
     }
   }, []);
 

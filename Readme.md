@@ -18,17 +18,27 @@ When? - App uses the complex logic to update the state and app updates the state
 
 ## Support libraries for Redux
 
-1. react-redux (React), Vuex (Vue) etc
-2. redux-toolkit
+1. react-redux -->> redux-toolkit
 3. redux devtools
 
 ## Redux Terminologies
 
-1. Actions -
-2. ActionCreators -
-3. Reducers -
-4. Dispatch -
-5. Selectors -
+1. Actions - JS Objects -- >> type (string), payload ()
+    type -> "Auth/signIn"
+    payload -> {uname, pwd}
+2. ActionCreators - function -> actiosn obj
+    const signIn = (signindetails) => {
+        return {
+            type -> "Auth/signIn"
+        payload -> signindetails
+        }
+    }
+3. Reducers - function -> state, actions
+    a. not to use side effects (Async functions, timers)
+    b. mutation of state is prohibited 
+4. Dispatch - coupled in UI -> that dispatch the actions
+5. Selectors - retrive the data from store, 
+6. Thunks -
 
 ## Redux data flow
 
