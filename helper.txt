@@ -1,0 +1,11 @@
+post_test = [{
+    id: 1,
+    title: 'test title 1',
+    body: 'test content 1',
+    userId: 1,
+}]
+
+author_test = [{
+    name: 'test ',
+    id: 1,
+}]

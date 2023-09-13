@@ -6,7 +6,7 @@ import { useAuthors } from '../../hooks/useAuthors';
 import { useForm } from 'react-hook-form';
 
 const AddPostForm = () => {
-  const {} = usePost();
+  const {addPostStore} = usePost();
   const navigate = useNavigate();
   const { authors } = useAuthors();
 
@@ -20,6 +20,11 @@ const AddPostForm = () => {
   const onSavePostClicked = (data) => {
     console.log(data);
 
+    addPostStore({
+      ...data,
+      id:nanoid(),
+    })
+    
     reset();
     navigate('/');
   };
